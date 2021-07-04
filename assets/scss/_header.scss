@@ -1,0 +1,58 @@
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 26px;
+    background-color: transparent;
+    .header-left{
+        .navbar{
+            padding: 0px;
+            .navbar-brand{
+                margin-right: 112px;
+                img{
+                    height: 79px;
+                    width: 79px;
+                }
+            }
+             
+            .nav-item{
+                &:not(:last-child){
+                    padding-right: 64px;
+                }
+                .nav-link{
+                    color: $color-gray;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 20px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    &:hover{
+                        color: $color-primary;
+                    }
+                }
+            }
+    
+        }
+
+    }
+    .header-right{
+        margin-top: 2%;
+        padding-left: 105px;
+        .dual-btn{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            button{
+                text-transform: uppercase;
+                .btn-icon{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    
+    
+}
+.active{
+    color: $color-primary !important;
+}

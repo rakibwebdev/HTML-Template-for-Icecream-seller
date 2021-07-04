@@ -1,0 +1,24 @@
+.ice-btn-primary{
+    background: $color-primary;
+    border-radius: 47px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-white;
+    padding: 8px 20px;
+}
+.ice-btn-secondary{
+    background: $color-ternary;
+    border-radius: 47px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-black;
+    padding: 8px 20px;
+}

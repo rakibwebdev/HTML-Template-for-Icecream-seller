@@ -1,0 +1,29 @@
+.product-container{
+    max-width: 265px;
+    display: block;
+    margin: 0 auto;
+    .product-block-top{
+        img{
+            border-radius: 8px;
+            margin-bottom: 26px;
+        }
+    }
+    .product-block-bottom{
+        .product-title{
+            margin-bottom: 6px;
+        }
+        a{
+            cursor: pointer;
+        }
+        .product-price{
+            color: $color-primary;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .product-block-add-cart-btn{
+            color: $color-primary
+        }
+    }
+}
