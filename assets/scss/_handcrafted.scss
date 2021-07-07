@@ -1,0 +1,28 @@
+.handcrafted-icecreame-section{
+    padding-top: 91px;
+    padding-bottom: 75px;
+    background: url(../img/Picture.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 43.50%;
+    .section-heading{
+        padding-bottom: 40px;
+    }
+    .icon-box{
+        display: flex;
+        .icon-box-header{
+            padding-right: 26px;
+        }
+        .icon-box-body{
+            h4{
+                font-size: 18px;
+                line-height: 25px;
+            }
+            p{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.faq-section{
+    padding-top: 101px;
+    padding-bottom: 107px;
+    .accordion{
+        margin-top: 68px;
+        .card{
+            border: none;
+            .card-header{
+                border: none;
+                padding: 16px 25px;
+                background: $accordion-bg;
+                border-radius: 8px;
+                margin: 10px 0px;
+                .acrd-btn{
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h3{
+                        color: $accordion-title;
+                    }
+                    
+                }
+            }
+            .card-body{
+                background: rgba(252, 232, 244, 0.5);
+                border-radius: 8px;
+                padding: 16px 25px;
+                padding-bottom: 29px;
+                margin: 10px 0px;
+                .card-body-title-container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+.accordion-icon-open{
+    width: 25px;
+    height: 25px;
+    background: url(../img/Arrow-Down.svg);
+}
+.accordion-icon-off{
+    width: 25px;
+    height: 25px;
+    background: url(../img/Arrow-Up.svg);
+}

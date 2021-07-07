@@ -3,6 +3,11 @@ header{
     justify-content: center;
     padding-top: 26px;
     background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     .header-left{
         .navbar{
             padding: 0px;
@@ -17,6 +22,10 @@ header{
             .nav-item{
                 &:not(:last-child){
                     padding-right: 64px;
+                    @media (min-width: 917px) and (max-width: 1024px) {
+                        padding-right: 26px;
+                        
+                    }
                 }
                 .nav-link{
                     color: $color-gray;
@@ -38,6 +47,9 @@ header{
     .header-right{
         margin-top: 2%;
         padding-left: 105px;
+        @media (min-width: 917px) and (max-width: 1024px) {
+            padding-left: 30px;
+        }
         .dual-btn{
             display: flex;
             align-items: center;

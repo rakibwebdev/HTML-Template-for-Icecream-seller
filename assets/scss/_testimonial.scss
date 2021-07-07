@@ -1,0 +1,79 @@
+.testimonial-section{
+    padding-top: 101px;
+    padding-bottom: 85px;
+    background-color: $color-bg;
+    .testimonial-slider{
+        padding-top: 70px;
+        position:relative;
+        .testimonial-box{
+            max-width: 265px;
+            .testimonial-box-header{
+                img{
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+            .testimonial-box-body{
+                h4{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: $color-heading;
+                    padding-top: 6px;
+                }
+                p{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 22px;
+                    letter-spacing: 0.03em;
+                    color: $color-text;
+                    margin: 3px 0px;
+                }
+            }
+            .testimonial-box-footer{
+                p{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 25px;
+                    letter-spacing: 0.03em;
+                    color: $color-heading;
+                    margin: 14px 0px;
+                }
+            }
+        }
+          .owl-prev, .owl-next {
+              position:absolute;
+           }
+      
+          .owl-prev {
+              left:-60px;
+              top: 200px;
+              @media (min-width: 917px) and (max-width: 1024px) {
+                left:-40px;
+            }
+           }
+      
+           .owl-next {
+              right:-60px;
+              top:200px;
+              @media (min-width: 917px) and (max-width: 1024px) {
+                right:-40px;
+            }
+           }
+        .owl-dots{
+            .owl-dot{
+                span{
+                    &::before{
+                        content: '';
+                        height: 8px;
+                        width: 8px;
+                        background-color: $color-text;
+                    }
+                }
+            }
+        }
+    }
+}
