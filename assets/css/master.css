@@ -98,11 +98,12 @@ header {
           justify-content: center;
   padding-top: 26px;
   background-color: transparent;
+  z-index: 1;
+  max-height: 110px;
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  z-index: 1;
+  left: 0;
 }
 header .header-left .navbar {
   padding: 0px;
@@ -113,6 +114,13 @@ header .header-left .navbar .navbar-brand {
 header .header-left .navbar .navbar-brand img {
   height: 79px;
   width: 79px;
+}
+@media only screen and (max-width: 991px) {
+  header .header-left .navbar .navbar-collapse {
+    background-color: #ffffff;
+    padding: 20px 10px;
+    border-radius: 8px;
+  }
 }
 header .header-left .navbar .nav-item:not(:last-child) {
   padding-right: 64px;
@@ -143,6 +151,11 @@ header .header-right {
     padding-left: 30px;
   }
 }
+@media (min-width: 0px) and (max-width: 991px) {
+  header .header-right {
+    padding-left: 0px;
+  }
+}
 header .header-right .dual-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,6 +166,11 @@ header .header-right .dual-btn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media only screen and (max-width: 767px) {
+  header .header-right .dual-btn {
+    display: none;
+  }
 }
 header .header-right .dual-btn button {
   text-transform: uppercase;
@@ -194,6 +212,11 @@ header .header-right .dual-btn button .btn-icon {
   font-size: 61px;
   line-height: 110%;
   padding-bottom: 18px;
+}
+@media only screen and (max-width: 991px) {
+  .slider-section .home-slider .slider-item .slider-left .slider-title {
+    font-size: 42px;
+  }
 }
 .slider-section .home-slider .slider-item .slider-left .slider-title span {
   color: #E3168F;
@@ -365,6 +388,11 @@ header .header-right .dual-btn button .btn-icon {
     left: -40px;
   }
 }
+@media (min-width: 0px) and (max-width: 991px) {
+  .testimonial-section .testimonial-slider .owl-prev {
+    left: -10px;
+  }
+}
 .testimonial-section .testimonial-slider .owl-next {
   right: -60px;
   top: 200px;
@@ -372,6 +400,11 @@ header .header-right .dual-btn button .btn-icon {
 @media (min-width: 917px) and (max-width: 1024px) {
   .testimonial-section .testimonial-slider .owl-next {
     right: -40px;
+  }
+}
+@media (min-width: 0px) and (max-width: 991px) {
+  .testimonial-section .testimonial-slider .owl-next {
+    right: -10px;
   }
 }
 .testimonial-section .testimonial-slider .owl-dots .owl-dot span::before {
@@ -469,6 +502,11 @@ footer .footer-top .footer-top-right .form-inline .form-group .form-control {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
+}
+@media only screen and (max-width: 991px) {
+  footer .footer-top .footer-top-right .form-inline .form-group .form-control {
+    width: 100%;
+  }
 }
 footer .footer-top .footer-top-right .form-inline button {
   padding: 13px 20px 13px 21px;

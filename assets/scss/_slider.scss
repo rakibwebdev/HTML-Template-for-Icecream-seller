@@ -18,6 +18,9 @@
                     font-size: 61px;
                     line-height: 110%;
                     padding-bottom: 18px;
+                    @media only screen and (max-width: 991px){
+                        font-size: 42px;
+                    }
                     span{
                         color: $color-primary;
                     }

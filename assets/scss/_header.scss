@@ -3,11 +3,12 @@ header{
     justify-content: center;
     padding-top: 26px;
     background-color: transparent;
+    z-index: 1;
+    max-height: 110px;
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
-    z-index: 1;
+    left: 0;
     .header-left{
         .navbar{
             padding: 0px;
@@ -18,6 +19,13 @@ header{
                     width: 79px;
                 }
             }
+        .navbar-collapse{
+            @media only screen and (max-width: 991px){
+                background-color: $color-white;
+                padding: 20px 10px;
+                border-radius: 8px;
+            }
+        }
              
             .nav-item{
                 &:not(:last-child){
@@ -50,10 +58,16 @@ header{
         @media (min-width: 917px) and (max-width: 1024px) {
             padding-left: 30px;
         }
+        @media (min-width: 0px) and (max-width: 991px) {
+            padding-left: 0px;
+        }
         .dual-btn{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media only screen and (max-width: 767px){
+                display: none;
+            }
             button{
                 text-transform: uppercase;
                 .btn-icon{
