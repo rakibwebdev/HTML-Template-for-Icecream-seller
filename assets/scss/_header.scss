@@ -9,8 +9,50 @@ header{
     top: 0;
     right: 0;
     left: 0;
+    @media only screen and (max-width: 991px){
+        z-index: 2;
+    }
+    .mobile-header{
+        display: none;
+        @media only screen and (max-width: 991px){
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            flex-direction: row;
+            width: 100%;
+        }
+        .navbar{
+            .navbar-collapse{
+                @media only screen and (max-width: 991px){
+                    background-color: $color-white;
+                    padding: 20px 10px;
+                    border-radius: 8px;
+                    position: absolute;
+                    width: 395px;
+                    top: 60px;
+                }
+                .nav-link{
+                    color: $color-gray;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 20px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    &:hover{
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
     .header-left{
         .navbar{
+            @media only screen and (max-width: 991px){
+                display: none;
+            }
             padding: 0px;
             .navbar-brand{
                 margin-right: 112px;
@@ -18,15 +60,7 @@ header{
                     height: 79px;
                     width: 79px;
                 }
-            }
-        .navbar-collapse{
-            @media only screen and (max-width: 991px){
-                background-color: $color-white;
-                padding: 20px 10px;
-                border-radius: 8px;
-            }
-        }
-             
+            }            
             .nav-item{
                 &:not(:last-child){
                     padding-right: 64px;
@@ -65,7 +99,7 @@ header{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            @media only screen and (max-width: 767px){
+            @media only screen and (max-width: 991px){
                 display: none;
             }
             button{

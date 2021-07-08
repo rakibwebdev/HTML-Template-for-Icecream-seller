@@ -18,9 +18,9 @@
                     font-size: 61px;
                     line-height: 110%;
                     padding-bottom: 18px;
-                    @media only screen and (max-width: 991px){
-                        font-size: 42px;
-                    }
+                    // @media only screen and (max-width: 991px){
+                    //     font-size: 42px;
+                    // }
                     span{
                         color: $color-primary;
                     }
@@ -50,11 +50,31 @@
                 }
             }
         }
+        .owl-dots{
+            position: absolute;
+            left: 10%;
+            top: 90%;
+        }
+    }
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        height: 8px;
+        width: 8px;
+        background-color: $border-color;
+        border-radius: 50%;
+        margin-right: 18px;
+    }
+    .owl-dots button.owl-dot.active {
+        height: 13px;
+        width: 13px;
+        background-color: #F8A81B;
     }
     .slider-social-icons{
         position: absolute;
         top: 244px;
         right: 0;
+        @media only screen and (max-width: 991px){
+            display: none;
+        }
         .social-icons{
             margin-right: 60px;
             ul li{

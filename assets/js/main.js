@@ -6,23 +6,16 @@
             loop:true,
             margin:10,
             responsiveClass:true,
-            dots: true,
-            dotClass: 'owl-dot',
-            dotsClass: 'owl-dots',
-            nav: false,
             responsive:{
                 0:{
                     items:1,
-                    nav:true
                 },
                 600:{
                     items:1,
-                    nav:false
                 },
                 1000:{
                     items:1,
-                    nav:true,
-                    loop:false
+                    loop:false,
                 }
             }
         });
@@ -33,7 +26,7 @@
             responsive:{
                 0:{
                     items:1,
-                    nav:true
+                    nav:false,
                 },
                 600:{
                     items:2,

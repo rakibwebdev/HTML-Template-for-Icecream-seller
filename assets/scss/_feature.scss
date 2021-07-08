@@ -6,4 +6,9 @@
             padding-bottom: 10px;
         }
     }
+    .mobile-margin{
+        @media only screen and (max-width: 991px){
+            margin-bottom: 55px;
+        }
+    }
 }
