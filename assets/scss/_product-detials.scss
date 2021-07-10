@@ -1,0 +1,204 @@
+.product-detials{
+    padding-top: 210px;
+    @media only screen and (max-width: 768px){
+        padding-top: 190px;
+    }
+    .product-single-img-container{
+        position: relative;
+        .product-navigation{
+            position: absolute;
+            left: 0;
+            top: 0;
+            @media only screen and (max-width: 768px){
+                left: 8px;
+                top: -64px;
+            }
+        }
+        .product-img{
+            margin-right: 20px;
+            @media only screen and (max-width: 768px){
+                margin-right: 0px;
+            }
+        }
+    }
+    .product-excerpt{
+        padding-left: 30px;
+        @media only screen and (max-width: 768px){
+            padding-left: 15px;
+            padding-top: 41px;
+        }
+        .product-category{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 137.1%;
+            /* or 19px */
+            color: $color-gray;
+            letter-spacing: 0.03em;
+            padding-bottom: 13px;
+        }
+        .product-title-single{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 133%;
+            /* or 40px */
+            color: $color-heading
+        }
+        .single-price{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 133%;
+            color: $color-heading;
+            padding-top: 10px;
+            padding-bottom: 17px;
+        }
+        .product-description{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 165.3%;
+            letter-spacing: 0.03em;
+            color: $color-gray;
+            padding-bottom: 29px;
+        }
+        .product-feature{
+            ul{
+                padding-left: 0px;
+                li{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 149.3%;
+                    letter-spacing: 0.03em;
+                    color: $color-heading;
+                    &:not(:last-child){
+                        padding-bottom: 10px;
+                    }
+                    span{
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+        .product-action{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-direction: row;
+            margin-top: 37px;
+            @media only screen and (max-width: 768px){
+                justify-content: space-between;
+            }
+            .single-product-quantity-container{
+                display: flex;
+                align-items: center;
+                align-content: center;
+                flex-direction: row;
+                margin-right: 47px;
+                .quantity-minus{
+                    margin-right: 30px;
+                }
+                .quantity-plus{
+                    margin-left: 30px;
+                }
+            }
+            .single-add-cart{
+                button{
+                    padding: 13px 20px 13px 21px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+.single-product-review{
+    padding-top: 93px;
+    .section-heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+        padding-bottom: 34px;
+        @media only screen and (max-width: 768px){
+            flex-wrap: wrap;
+        }
+        h2{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 133%;
+            color: $color-heading;
+        }
+        button{
+            @media only screen and (max-width: 768px){
+                margin-top: 23px;
+            }
+            padding: 13px 20px 13px 21px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: $color-primary;
+            span{
+                padding-right: 11px;
+            }
+        }
+    }
+    .reviews-container{
+        ul{
+            padding-left: 0px;
+            li{
+                .customer-details{
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    .customer-avatar{
+                        padding-right: 22px;
+                    }
+                    .customer-description{
+                        h6{
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 25px;
+                            color: $color-heading;
+                            margin-bottom: 1px;
+                        }
+                        p{
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 137.1%;
+                            /* or 19px */
+
+                            letter-spacing: 0.03em;
+                            color: $color-gray;
+                        }
+                    }
+                }
+                .review-text{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 149.3%;
+                    /* or 25px */
+
+                    letter-spacing: 0.03em;
+
+                    /* Black / 100% */
+
+                    color: $color-heading;
+                    padding-top: 14px;
+                }
+                &:not(:last-child){
+                    padding-bottom: 52px;
+                }
+            }
+        }
+    }
+}
