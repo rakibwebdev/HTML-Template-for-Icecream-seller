@@ -1,0 +1,41 @@
+.our-story{
+    padding-top: 130px;
+    .container{
+        .row{
+            align-items: center;
+            .left{
+                h2{
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 61px;
+                    line-height: 110%;
+                    color: $color-black;
+                }
+                p{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 182.3%;
+                    /* or 31px */
+
+                    letter-spacing: 0.03em;
+                    color: $color-gray;
+                    padding-top: 25px;
+                }
+                img{
+                    display: none;
+                    @media only screen and (max-width: 768px){
+                        display: block;
+                    }
+                }
+            }
+            .right{
+                img{
+                    @media only screen and (max-width: 768px){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -59,3 +59,17 @@ body{
     padding-top: unset;
     background-color: unset;
 }
+button:active{
+    outline: none !important;
+    box-shadow: none !important;
+}
+button:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+// @media (min-width: 1200px){
+//     .container{
+//         max-width: 1440px;
+//     }
+// }
