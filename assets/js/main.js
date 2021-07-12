@@ -42,6 +42,16 @@
                 }
             }
         });
+
+        // show hide cart modal
+        jQuery('.modal-cart').hide();
+        jQuery( ".header-cart-btn" ).click(function() {
+            jQuery( ".modal-cart" ).show();
+        });
+        jQuery( ".modal-cart-close" ).click(function() {
+            jQuery( ".modal-cart" ).hide();
+        });
+
     });
 
 

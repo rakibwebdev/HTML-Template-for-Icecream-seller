@@ -255,7 +255,7 @@ header .header-right .dual-btn .modal-cart {
   padding-top: 32px;
   position: absolute;
   z-index: 10;
-  top: 0;
+  top: 50px;
   right: 0;
 }
 header .header-right .dual-btn .modal-cart .modal-cart-header {
@@ -358,6 +358,37 @@ header .header-right .dual-btn .modal-cart .modal-cart-body .modal-cart-products
   letter-spacing: 0.03em;
   /* Black / 100% */
   color: #343434;
+}
+header .header-right .dual-btn .modal-cart .modal-cart-footer .total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 61px;
+  margin-bottom: 61px;
+}
+header .header-right .dual-btn .modal-cart .modal-cart-footer .total-price h3 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  /* identical to box height */
+  /* Gray 2 */
+  color: #4F4F4F;
+}
+header .header-right .dual-btn .modal-cart .modal-cart-footer button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 14px 21px;
 }
 
 .active {
