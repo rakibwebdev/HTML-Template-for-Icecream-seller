@@ -1,6 +1,6 @@
 .testimonial-section{
-    padding-top: 101px;
-    padding-bottom: 115px;
+    padding-top: 95px;
+    padding-bottom: 85px;
     background-color: $color-bg;
     .testimonial-slider{
         padding-top: 70px;
@@ -49,9 +49,12 @@
            }
       
           .owl-prev {
-              left:-60px;
+              left:-8px;
               top: 200px;
-              @media (min-width: 917px) and (max-width: 1024px) {
+              @media (min-width: 2560px){
+                left: -60px;
+            }
+            @media (min-width: 917px) and (max-width: 1024px) {
                 left:-40px;
             }
             @media (min-width: 0px) and (max-width: 991px) {
@@ -60,14 +63,17 @@
            }
       
            .owl-next {
-              right:-60px;
+              right:-8px;
               top:200px;
-              @media (min-width: 917px) and (max-width: 1024px) {
-                right:-40px;
-            }
-            @media (min-width: 0px) and (max-width: 991px) {
-                right:-10px;
-            }
+              @media (min-width: 2560px){
+                  right: -60px;
+              }
+                @media (min-width: 917px) and (max-width: 1024px) {
+                    right:-40px;
+                }
+                @media (min-width: 0px) and (max-width: 991px) {
+                    right:-10px;
+                }
            }
            .owl-dots{
                text-align: center;

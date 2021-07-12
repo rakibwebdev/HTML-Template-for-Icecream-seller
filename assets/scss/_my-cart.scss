@@ -1,0 +1,536 @@
+.my-cart{
+    padding-top: 195px;
+    .section-heading{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 133%;
+        color: $color-heading;
+        span{
+            padding-right: 16px;
+        }
+    }
+    .cart-left-container{
+        .accordion{
+            margin-top: 38px;
+            .card{
+                background: #FFFFFF;
+                /* Black / Overlay */
+
+                border: 1px solid #E7E7E7;
+                box-sizing: border-box;
+                /* Card Shadow */
+
+                box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0883);
+                border-radius: 8px;
+                padding-left: 28px;
+                padding-right: 28px;
+                padding-bottom: 41px;
+                padding-top: 26px;
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+                .card-header{
+                    border: none;
+                    background-color: transparent;
+                    .acrd-btn-title{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .left{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            h6{
+                                background-color: #F8A81B;
+                                width: 29px;
+                                height: 29px;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 18px;
+                                color: #FFFFFF;
+                                margin-right: 18px;
+                            }
+                            h4{
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 20px;
+                                line-height: 27px;
+
+                                /* Black / 100% */
+
+                                color: #343434;
+                            }
+                        }
+                        .cart-edit-info-btn{
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+                            text-align: center;
+                            letter-spacing: 0.03em;
+                            padding: 9px 21px;
+                        }
+                    }
+                }
+                .card-body{
+                    
+                    .card-body-title-container-logged{
+                        background: #FFFFFF;
+                        /* Black / Overlay */
+
+                        border: 1px solid #E7E7E7;
+                        box-sizing: border-box;
+                        /* Soft Shadow */
+
+                        box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
+                        border-radius: 8px;
+                        padding: 18px;
+                        h3{
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 22px;
+                            line-height: 30px;
+                            color: #343434;
+                            padding-bottom: 6px;
+                        }
+                        p{
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 137.1%;
+                            /* or 19px */
+
+                            letter-spacing: 0.03em;
+
+                            /* Black / 80% */
+
+                            color: #5D5D5D;
+                            span{
+                                padding-right: 13px;
+                            }
+                            &:not(:last-child){
+                                padding-bottom: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+            .my-details{
+                .card-body{
+                    .card-body-title-container{
+                        p{
+                            font-family: Open Sans;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+
+                            /* Black / 80% */
+
+                            color: #5D5D5D;
+                            padding-bottom: 21px;
+                        }
+                        form{
+                            .form-group{
+                                label{
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 137.1%;
+                                    /* or 19px */
+
+                                    letter-spacing: 0.03em;
+
+                                    /* Black / 80% */
+
+                                    color: #5D5D5D;
+                                }
+                                input{
+                                    border: none;
+                                    padding: 12px 15px;
+                                    background: #F3F3F3;
+                                    border-radius: 8px;
+                                }
+                                button{
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    /* identical to box height */
+
+                                    text-align: center;
+                                    letter-spacing: 0.03em;
+
+                                    color: #FFFFFF;
+                                    padding: 9px 21px;
+                                    img{
+                                        padding-left: 14px;
+                                    }
+                                }
+                            }
+                            button{
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 22px;
+                                /* identical to box height */
+
+                                text-align: center;
+                                letter-spacing: 0.03em;
+
+                                color: #FFFFFF;
+                                padding: 9px 21px;
+                                img{
+                                    padding-left: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .delivery-details{
+                .card-body{
+                    .card-body-title-container{
+                        ul{
+                            padding: 0px;
+                            li{
+                                padding: 17px 15px;
+                                background: #FFFFFF;
+                                /* Black / Overlay */
+
+                                border: 1px solid #E7E7E7;
+                                box-sizing: border-box;
+                                box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
+                                border-radius: 10px;
+                                .address-title{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    h3{
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        font-size: 18px;
+                                        line-height: 25px;
+                                        /* identical to box height */
+
+
+                                        /* Black / 100% */
+
+                                        color: #343434;
+                                        padding-bottom: 7px;
+                                    }
+                                    p{
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 14px;
+                                        line-height: 137.1%;
+                                        /* or 19px */
+
+                                        letter-spacing: 0.03em;
+
+                                        /* Black / 60% */
+
+                                        color: #858585;
+                                    }
+                                }
+                                &:not(:last-child){
+                                    margin-bottom: 16px;
+                                }
+                            }
+                        }
+                        .other-address{
+                            h3{
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 18px;
+                                line-height: 25px;
+                                /* identical to box height */
+
+
+                                /* Black / 100% */
+
+                                color: #343434;
+                                padding-bottom: 8px;
+                            }
+                            form{
+                                .form-group{
+                                    label{
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 14px;
+                                        line-height: 137.1%;
+                                        /* or 19px */
+
+                                        letter-spacing: 0.03em;
+
+                                        /* Black / 80% */
+
+                                        color: #5D5D5D;
+                                        span{
+                                            padding-right: 12px;
+                                        }
+                                    }
+                                    input{
+                                        border: none;
+                                        padding: 12px 15px;
+                                        height: 119px;
+                                        background: #F3F3F3;
+                                        border-radius: 8px;
+                                    }
+                                    
+                                }
+                                button{
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    /* identical to box height */
+
+                                    text-align: center;
+                                    letter-spacing: 0.03em;
+
+                                    color: #FFFFFF;
+                                    padding: 9px 21px;
+                                    margin-top: 9px;
+                                    float: right;
+                                    span{
+                                        img{
+                                            padding-left: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .payment-details{
+                ul{
+                    padding: 0px;
+                    li{
+                        padding: 17px 15px;
+                        background: #FFFFFF;
+                        /* Black / Overlay */
+
+                        border: 1px solid #E7E7E7;
+                        box-sizing: border-box;
+                        box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        .payment-icon{
+                            padding-right: 26px;
+                        }
+                        .payment-title{
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            flex:1;
+                            h3{
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 18px;
+                                line-height: 25px;
+                                /* identical to box height */
+
+
+                                /* Black / 100% */
+
+                                color: #343434;
+                                padding-bottom: 7px;
+                            }
+                            p{
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 137.1%;
+                                /* or 19px */
+
+                                letter-spacing: 0.03em;
+
+                                /* Black / 60% */
+
+                                color: #858585;
+                            }
+                        }
+                        &:not(:last-child){
+                            margin-bottom: 16px;
+                        }
+                    }
+                    .confirm-payment-btn{
+                        font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 22px;
+                                /* identical to box height */
+
+                                text-align: center;
+                                letter-spacing: 0.03em;
+
+                                color: #FFFFFF;
+                                padding: 9px 21px;
+                                float: right;
+                                img{
+                                    padding-left: 14px;
+                                }
+                    }
+                }
+            }
+        }
+    }
+    .cart-right-container{
+        background: #FFFFFF;
+        /* Card Shadow */
+
+        box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0883);
+        border-radius: 15px;
+        margin-top: 38px;
+        padding: 35px 29px;
+        .section-heading{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 133%;
+            color: #343434;
+        }
+        ul{
+            padding:0px;
+            margin-top: 27px;
+            li{
+                background: #FFFFFF;
+                /* Black / Overlay */
+
+                border: 1px solid #E7E7E7;
+                box-sizing: border-box;
+                /* Soft Shadow */
+                padding: 15px;
+                box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+                .left{
+                    .quantity-container{
+                        display: flex;
+                        align-items: center;
+                        margin-right: 26px;
+                        .quantity-minus{
+                            margin-right: 14px;
+                        }
+                        .quantity-plus{
+                            margin-left: 14px;
+                        }
+                    }
+                }
+                .right{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    img{
+                        height: 53px;
+                        width: 53px;
+                        border-radius: 4px;
+                        margin-right: 18px;
+                    }
+                    h4{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 22px;
+                        
+                        /* Black / 100% */
+                        
+                        color: #343434;
+                        width: 227px;
+                        flex:1;
+                    }
+                    h5{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 137.1%;
+                        /* or 19px */
+
+                        letter-spacing: 0.03em;
+
+                        /* Black / 100% */
+
+                        color: #343434;
+                        padding-left: 68px;
+                    }
+                }
+            }
+        }
+        .price-container{
+            margin-top: 32px;
+            .subtotal, .delivery-charge, .total{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 14px;
+                h3,h4{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 25px;
+                    /* identical to box height */
+
+
+                    /* Black / 100% */
+
+                    color: #343434;
+                }
+            }
+        }
+    }
+    .coupon-form{
+        padding: 35px 29px;
+        form{
+            .form-group{
+                label{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 137.1%;
+                    /* or 19px */
+    
+                    letter-spacing: 0.03em;
+    
+                    /* Black / 80% */
+    
+                    color: #5D5D5D;
+                }
+                input{
+                    border: none;
+                    padding: 12px 15px;
+                    background: #F3F3F3;
+                    border-radius: 8px;
+                }
+            }
+            button{
+                padding: 9px 21px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                /* identical to box height */
+
+                text-align: center;
+                letter-spacing: 0.03em;
+
+                color: #FFFFFF;
+                img{
+                    padding-left: 12px;
+                }
+            }
+        }
+    }
+}

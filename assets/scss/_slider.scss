@@ -19,9 +19,14 @@
                     font-size: 61px;
                     line-height: 110%;
                     padding-bottom: 18px;
+                    width: 603px;
                     // @media only screen and (max-width: 991px){
                     //     font-size: 42px;
                     // }
+                    @media only screen and (max-width: 991px){
+                        line-height: 133%;
+                        width: 100%;
+                    }
                     span{
                         color: $color-primary;
                     }
@@ -34,12 +39,18 @@
                     letter-spacing: 0.03em;
                     color: $color-text;
                     padding-bottom: 28px;
+                    width: 603px;
+                    @media only screen and (max-width: 991px){
+                        line-height: 149%;
+                        width: 100%;
+                    }
                 }
                 .btn-slider{
                     align-items: center;
                     padding: 13px 20px 13px 21px;
                     border-radius: 47px;
                     text-transform: capitalize;
+                    margin-bottom: 100px;
                     span{
                         padding-left: 15px;
                     }
@@ -47,14 +58,17 @@
             }
             .slider-right{
                 .slider-img{
-                    width: 670px;
+                    width: 525px;
                 }
             }
         }
         .owl-dots{
             position: absolute;
-            left: 10%;
+            left: 1%;
             top: 90%;
+            @media (min-width: 2560px){
+                left: 23%;
+            }
         }
     }
     .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {

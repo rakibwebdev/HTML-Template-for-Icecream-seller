@@ -2,6 +2,9 @@ footer{
     padding-top: 101px;
     padding-bottom: 61px;
     background-color: $color-bg;
+    @media only screen and (max-width: 768px){
+        padding-bottom: 33px;
+    }
     .footer-top{
         .footer-top-right{
             display: flex;
@@ -25,7 +28,7 @@ footer{
                             width: 100%;
                         }
                         @media only screen and (max-width: 768px){
-                            width: 395px !important;
+                            width: 348px !important;
                         }
                     }
                 }

@@ -52,9 +52,9 @@ button:active {
     outline: none;
     border: none;
 }
-body{
-    overflow-x: hidden;
-}
+// body{
+//     overflow-x: hidden;
+// }
 .other-page-footer{
     padding-top: unset;
     background-color: unset;
@@ -68,8 +68,8 @@ button:focus{
     box-shadow: none !important;
 }
 
-// @media (min-width: 1200px){
-//     .container{
-//         max-width: 1440px;
-//     }
-// }
+ @media (min-width: 1200px){
+     .container{
+         max-width: 1440px;
+     }
+}

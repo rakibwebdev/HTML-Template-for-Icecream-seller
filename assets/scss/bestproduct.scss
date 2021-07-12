@@ -1,5 +1,8 @@
 .best-product{
     background-color: $color-bg;
-    padding-top: 101px;
+    padding-top: 110px;
     padding-bottom: 143px;
+    @media only screen and (max-width: 768px){
+        padding-bottom: 43px;
+    }
 }
