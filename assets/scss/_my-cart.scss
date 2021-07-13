@@ -11,6 +11,9 @@
         }
     }
     .cart-left-container{
+        @media only screen and (max-width: 768px){
+            order: 2
+        }
         .accordion{
             margin-top: 38px;
             .card{
@@ -37,6 +40,9 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+                        @media only screen and (max-width: 768px){
+                            flex-wrap: wrap;
+                        }
                         .left{
                             display: flex;
                             align-items: center;
@@ -74,6 +80,9 @@
                             text-align: center;
                             letter-spacing: 0.03em;
                             padding: 9px 21px;
+                            @media only screen and (max-width: 768) {
+                                margin-top: 12px;
+                            }
                         }
                     }
                 }
@@ -391,6 +400,7 @@
         border-radius: 15px;
         margin-top: 38px;
         padding: 35px 29px;
+        .desktop-list
         .section-heading{
             font-style: normal;
             font-weight: bold;
@@ -411,62 +421,134 @@
                 padding: 15px;
                 box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
                 border-radius: 8px;
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
+                
                 &:not(:last-child){
                     margin-bottom: 10px;
                 }
-                .left{
-                    .quantity-container{
-                        display: flex;
-                        align-items: center;
-                        margin-right: 26px;
-                        .quantity-minus{
-                            margin-right: 14px;
-                        }
-                        .quantity-plus{
-                            margin-left: 14px;
-                        }
-                    }
-                }
-                .right{
+                .desktop-list{
                     display: flex;
                     align-items: center;
-                    flex-wrap: wrap;
-                    img{
-                        height: 53px;
-                        width: 53px;
-                        border-radius: 4px;
-                        margin-right: 18px;
+                    @media only screen and (max-width: 991px){
+                        flex-wrap: wrap;
                     }
-                    h4{
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 16px;
-                        line-height: 22px;
-                        
-                        /* Black / 100% */
-                        
-                        color: #343434;
-                        width: 227px;
-                        flex:1;
+                    @media only screen and (max-width: 768px){
+                        display: none;
                     }
-                    h5{
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 14px;
-                        line-height: 137.1%;
-                        /* or 19px */
-
-                        letter-spacing: 0.03em;
-
-                        /* Black / 100% */
-
-                        color: #343434;
-                        padding-left: 68px;
+                    .left{
+                        .quantity-container{
+                            display: flex;
+                            align-items: center;
+                            margin-right: 26px;
+                            .quantity-minus{
+                                margin-right: 14px;
+                            }
+                            .quantity-plus{
+                                margin-left: 14px;
+                            }
+                        }
+                    }
+                    .right{
+                        display: flex;
+                        align-items: center;
+                        
+                        @media only screen and (max-width: 991px){
+                            flex-wrap: wrap;
+                        }
+                        img{
+                            height: 53px;
+                            width: 53px;
+                            border-radius: 4px;
+                            margin-right: 18px;
+                        }
+                        h4{
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+                            
+                            /* Black / 100% */
+                            
+                            color: #343434;
+                            width: 227px;
+                            flex:1;
+                        }
+                        h5{
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 14px;
+                            line-height: 137.1%;
+                            /* or 19px */
+    
+                            letter-spacing: 0.03em;
+    
+                            /* Black / 100% */
+    
+                            color: #343434;
+                            padding-left: 68px;
+                        }
                     }
                 }
+                .mobile-list{
+                    display: none;
+                    .top{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        img{
+                            width: 52.22px;
+                            height: 53px;
+                            margin-right: 18px;
+                        }
+                        h3{
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+
+                        }
+                    }
+                    .bottom{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 12px;
+                        .quantity{
+                            p{
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 15px;
+                                line-height: 149.3%;
+                                /* or 22px */
+
+                                letter-spacing: 0.03em;
+
+                                /* Black / 80% */
+
+                                color: #5D5D5D;
+                            }
+                        }
+                        .price{
+                            h6{
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 14px;
+                                line-height: 137.1%;
+                                /* or 19px */
+                                
+                                letter-spacing: 0.03em;
+                                
+                                /* OMG Pink/100% */
+                                
+                                color: #E3168F;
+                                
+                            }
+                        }
+                    }
+                    @media only screen and (max-width: 768px){
+                        display: block;
+                    }
+                }
+                
             }
         }
         .price-container{
