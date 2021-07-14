@@ -1,0 +1,162 @@
+.account-information{
+    padding-top: 150px;
+    .account-info-side-bar{
+        padding: 22px;
+        box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0883);
+        border-radius: 15px;
+        ul{
+            padding: 0px;
+            li{
+                button{
+                    padding: 0px;
+                    margin: 0px;
+                    text-align: left;
+                    width: 100%;
+                    padding-left: 12px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                    /* identical to box height */
+
+
+                    /* Black / 80% */
+
+                    color: #5D5D5D;
+                    
+                }
+                .active{
+                    background: #FCE3F2;
+                    border-radius: 7px;
+                    padding:12px;
+                }
+                &:not(:last-child){
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .account-info-detail-container{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0883);
+        border-radius: 15px;
+        padding:28px;
+        .account-info-wrapper{
+            .show-account-info{
+                .section-heading{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h3{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 25px;
+                        line-height: 133%;
+                        /* or 33px */
+
+
+                        /* Gray 1 */
+
+                        color: #333333;
+                        margin-bottom: 25px;
+                    }
+                    button{
+                        padding: 13px 20px 13px 21px;
+                        border-radius: 47px;
+                        span{
+                            padding-right: 10px;
+                        }
+                    }
+                }
+                h3{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 30px;
+                    margin-bottom: 14px;
+
+                    color: #363940;
+                }
+                ul{
+                    padding: 0px;
+                    li{
+                        p{
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 137.1%;
+                            /* or 19px */
+
+                            letter-spacing: 0.03em;
+
+                            /* Black / 80% */
+
+                            color: #5D5D5D;
+                            margin-bottom: 4px;
+                        }
+                        h4{
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 25px;
+                            /* identical to box height */
+
+
+                            /* Black / 80% */
+
+                            color: #5D5D5D;
+                        }
+                        &:not(:last-child){
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+            .edit-account-info{
+                .section-heading{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 50px;
+                }
+                .dual-btn{
+                    button{
+                        padding: 13px 21px 13px 21px;
+                        color: $color-white;
+                        span{
+                            padding-right: 12px;
+                        }
+                        &:first-child{
+                            color: $color-primary;
+                            margin-right: 14px;
+                        }
+                    }
+                }
+                form{
+                    .form-group{
+                        label{
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 137.1%;
+                            /* or 19px */
+
+                            letter-spacing: 0.03em;
+
+                            /* Black / 100% */
+
+                            color: #343434;
+                            margin-bottom: 12px;
+                        }
+                        input{
+                            padding: 12px 15px;
+                            border: none;
+                            background: #F3F3F3;
+                            border-radius: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -82,6 +82,11 @@ header{
                     }
                 }
             }
+            .active{
+                .nav-link{
+                    color: $color-primary;
+                }
+            }
     
         }
 
@@ -110,147 +115,151 @@ header{
                     margin-right: 10px;
                 }
             }
-            .modal-cart{
-                width: 506px;
-                background-color: $color-white;
-                padding-left: 26px;
-                padding-right: 26px;
-                padding-bottom: 102px;
-                padding-top: 32px;
-                position: absolute;
-                z-index: 10;
-                top: 50px;
-                right: 0;
-                .modal-cart-header{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    margin-bottom: 34px;
-                    h2{
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 30px;
-                        line-height: 133%;
-                        /* identical to box height, or 40px */
+            
+        }
+    }
+    .modal-cart{
+        width: 506px;
+        background-color: $color-white;
+        padding-left: 26px;
+        padding-right: 26px;
+        padding-bottom: 102px;
+        padding-top: 32px;
+        position: absolute;
+        z-index: 10;
+        top: 100px;
+        right: 0;
+        @media only screen and(max-width: 768px){
+            width: 100%;
+            top: 0px;
+        }
+        .modal-cart-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 34px;
+            h2{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 133%;
+                /* identical to box height, or 40px */
 
 
-                        /* Gray 1 */
+                /* Gray 1 */
 
-                        color: $accordion-title;
-                    }
-                }
-                .modal-cart-body{
-                    height: 500px;
-                    overflow-y: scroll;
-                    .modal-cart-products{
-                        ul{
-                            padding: 0px;
-                            li{
+                color: $accordion-title;
+            }
+        }
+        .modal-cart-body{
+            max-height: 500px;
+            overflow-y: scroll;
+            .modal-cart-products{
+                ul{
+                    padding: 0px;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #E7E7E7;
+                        box-sizing: border-box;
+                        /* Soft Shadow */
+
+                        box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
+                        border-radius: 8px;
+                        padding: 16px 15px;
+                        &:not(:last-child){
+                            margin: 14px 0px;
+                        }
+                        .product-img{
+                            margin-right: 18px;
+                            img{
+                                width: 67px;
+                                height: 68px;
+                            }
+                        }
+                        .product-excerpt{
+                            .top{
+                                display: flex;
+                                align-items: flex-start;
+                                justify-content: space-between;
+                                h3{
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 22px;
+
+                                    /* Black / 100% */
+
+                                    color: $color-heading;
+                                    margin-bottom: 4px;
+                                    padding-right: 61px;
+                                }
+                            }
+                            .bottom{
                                 display: flex;
                                 align-items: center;
-                                border: 1px solid #E7E7E7;
-                                box-sizing: border-box;
-                                /* Soft Shadow */
+                                justify-content: space-between;
+                                .quantity{
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 15px;
+                                    line-height: 149.3%;
+                                    /* or 22px */
 
-                                box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
-                                border-radius: 8px;
-                                padding: 16px 15px;
-                                &:not(:last-child){
-                                    margin: 14px 0px;
+                                    letter-spacing: 0.03em;
+                                    color: $color-gray;
                                 }
-                                .product-img{
-                                    margin-right: 18px;
-                                    img{
-                                        width: 67px;
-                                        height: 68px;
-                                    }
-                                }
-                                .product-excerpt{
-                                    .top{
-                                        display: flex;
-                                        align-items: flex-start;
-                                        justify-content: space-between;
-                                        h3{
-                                            font-style: normal;
-                                            font-weight: 600;
-                                            font-size: 16px;
-                                            line-height: 22px;
+                                .price{
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 14px;
+                                    line-height: 137.1%;
+                                    /* or 19px */
 
-                                            /* Black / 100% */
+                                    letter-spacing: 0.03em;
 
-                                            color: $color-heading;
-                                            margin-bottom: 4px;
-                                            padding-right: 61px;
-                                        }
-                                    }
-                                    .bottom{
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: space-between;
-                                        .quantity{
-                                            font-style: normal;
-                                            font-weight: normal;
-                                            font-size: 15px;
-                                            line-height: 149.3%;
-                                            /* or 22px */
+                                    /* Black / 100% */
 
-                                            letter-spacing: 0.03em;
-                                            color: $color-gray;
-                                        }
-                                        .price{
-                                            font-style: normal;
-                                            font-weight: bold;
-                                            font-size: 14px;
-                                            line-height: 137.1%;
-                                            /* or 19px */
-
-                                            letter-spacing: 0.03em;
-
-                                            /* Black / 100% */
-
-                                            color: $color-heading;
-                                        }
-                                    }
+                                    color: $color-heading;
                                 }
                             }
                         }
                     }
                 }
-                .modal-cart-footer{
-                    .total-price{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        margin-top: 61px;
-                        margin-bottom: 61px;
-                        h3{
-                            font-weight: bold;
-                            font-size: 22px;
-                            line-height: 30px;
-                            /* identical to box height */
+            }
+        }
+        .modal-cart-footer{
+            .total-price{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 61px;
+                margin-bottom: 61px;
+                h3{
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 30px;
+                    /* identical to box height */
 
 
-                            /* Gray 2 */
+                    /* Gray 2 */
 
-                            color: #4F4F4F;
-                        }
-                    }
-                    button{
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 16px;
-                        line-height: 22px;
-                        /* identical to box height */
-
-                        text-align: center;
-                        letter-spacing: 0.03em;
-                        padding: 14px 21px;
-                    }
+                    color: #4F4F4F;
                 }
+            }
+            button{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                /* identical to box height */
+
+                text-align: center;
+                letter-spacing: 0.03em;
+                padding: 14px 21px;
             }
         }
     }
-    
     
 }
 .active{

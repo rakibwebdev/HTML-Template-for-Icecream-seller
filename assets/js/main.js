@@ -51,6 +51,142 @@
         jQuery( ".modal-cart-close" ).click(function() {
             jQuery( ".modal-cart" ).hide();
         });
+        jQuery( ".cart-icon" ).click(function() {
+            jQuery( ".modal-cart" ).show();
+        });
+
+        //cart-edit-info-button
+        jQuery('.cart-edit-info-container').hide();
+        jQuery( ".cart-edit-info-btn" ).click(function() {
+            jQuery( ".cart-edit-info-container" ).show();
+        });
+
+        //cart radio
+        $('.radio-group .radio').click(function(){
+            $(this).parent().find('.radio').removeClass('selected');
+            $(this).addClass('selected');
+            var val = $(this).attr('data-value');
+            //alert(val);
+            $(this).parent().find('input').val(val);
+        });
+
+        
+        jQuery(".other-address-field").hide();
+        $(".radio-btn-note").prop('checked', false);
+         jQuery( ".radio-btn-note" ).click(function() {
+            jQuery( ".other-address-field" ).show();
+        });
+
+        //shop page
+        jQuery('#shoptab2').hide();
+        jQuery('.new-product-btn').addClass("active");
+
+
+        jQuery('.new-product-btn').click(function(){
+            jQuery('#shoptab1').show();
+            jQuery('#shoptab2').hide();
+            jQuery('.popular-product-btn').removeClass("active");
+            jQuery('.new-product-btn').addClass("active");
+        });
+
+        jQuery('.popular-product-btn').click(function(){
+            jQuery('#shoptab2').show();
+            jQuery('#shoptab1').hide();
+            jQuery('.popular-product-btn').addClass("active");
+            jQuery('.new-product-btn').removeClass("active");
+        });
+
+        //nav active
+        jQuery(".nav-item:first-child").addClass("active");
+        jQuery(".nav-item").click(function() {
+            if(jQuery(".nav-item").hasClass("active")){
+                jQuery(".nav-item").removeClass("active");
+            }
+            jQuery(this).addClass("active");
+        });
+
+
+        // account information side tab
+        jQuery('.tab-account-info').addClass("active");
+        jQuery('.tab-account-info').click(function(){
+            jQuery('.account-info-wrapper').show();
+            jQuery('.tab-account-info').addClass("active");
+            jQuery('.tab-my-order').removeClass("active");
+            jQuery('.tab-delivery').removeClass("active");
+            jQuery('.tab-payment').removeClass("active");
+            jQuery('.tab-logout').removeClass("active");
+            jQuery('.my-order-wrapper').hide();
+            jQuery('.delivary-wrapper').hide();
+            jQuery('.payment-wrapper').hide();
+            jQuery('.logout-wrapper').hide();
+        });
+        jQuery('.tab-my-order').click(function(){
+            jQuery('.my-order-wrapper').show();
+            jQuery('.tab-my-order').addClass("active");
+            jQuery('.tab-account-info').removeClass("active");
+            jQuery('.tab-delivery').removeClass("active");
+            jQuery('.tab-payment').removeClass("active");
+            jQuery('.tab-logout').removeClass("active");
+            jQuery('.account-info-wrapper').hide();
+            jQuery('.delivary-wrapper').hide();
+            jQuery('.payment-wrapper').hide();
+            jQuery('.logout-wrapper').hide();
+        });
+        jQuery('.tab-delivery').click(function(){
+            jQuery('.delivary-wrapper').show();
+            jQuery('.tab-delivery').addClass("active");
+            jQuery('.tab-account-info').removeClass("active");
+            jQuery('.tab-my-order').removeClass("active");
+            jQuery('.tab-payment').removeClass("active");
+            jQuery('.tab-logout').removeClass("active");
+            jQuery('.account-info-wrapper').hide();
+            jQuery('.my-order-wrapper').hide();
+            jQuery('.payment-wrapper').hide();
+            jQuery('.logout-wrapper').hide();
+        });
+        jQuery('.tab-payment').click(function(){
+            jQuery('.payment-wrapper').show();
+            jQuery('.tab-payment').addClass("active");
+            jQuery('.tab-account-info').removeClass("active");
+            jQuery('.tab-my-order').removeClass("active");
+            jQuery('.tab-delivery').removeClass("active");
+            jQuery('.tab-logout').removeClass("active");
+            jQuery('.account-info-wrapper').hide();
+            jQuery('.my-order-wrapper').hide();
+            jQuery('.delivary-wrapper').hide();
+            jQuery('.logout-wrapper').hide();
+        });
+        jQuery('.tab-logout').click(function(){
+            jQuery('.logout-wrapper').show();
+            jQuery('.tab-logout').addClass("active");
+            jQuery('.tab-account-info').removeClass("active");
+            jQuery('.tab-my-order').removeClass("active");
+            jQuery('.tab-delivery').removeClass("active");
+            jQuery('.tab-payment').removeClass("active");
+            jQuery('.account-info-wrapper').hide();
+            jQuery('.my-order-wrapper').hide();
+            jQuery('.delivary-wrapper').hide();
+            jQuery('.payment-wrapper').hide();
+        });
+        
+
+
+        //account information form
+        jQuery('.edit-account-info').hide();
+        jQuery('.account-edit-btn').click(function(){
+            jQuery('.edit-account-info').show();
+            jQuery('.show-account-info').hide();
+        });
+
+        jQuery('.edit-account-cancel-btn').click(function(){
+            jQuery('.edit-account-info').hide();
+            jQuery('.show-account-info').show();
+        });
+        
+
+
+        
+        
 
     });
 

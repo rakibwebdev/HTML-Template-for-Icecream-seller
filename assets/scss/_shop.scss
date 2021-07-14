@@ -51,8 +51,11 @@
                     line-height: 137.1%;
                     color: #AEAEAE;
                     &:not(:last-child){
-                        color: $color-primary;
+                        // color: $color-primary;
                         padding-right: 21px !important;
+                    }
+                    .active{
+                        color: $color-primary !important;
                     }
                 }
             }
@@ -81,7 +84,7 @@
                 font-size: 16px;
                 line-height: 22px;
                 &:first-child{
-                    color: $color-primary;
+                    // color: $color-primary;
                     span{
                         padding-right: 13px;
                     }
