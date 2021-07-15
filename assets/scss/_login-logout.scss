@@ -1,0 +1,119 @@
+.login-logout-modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    // min-width: 100vw;
+    // min-height: 100vh;
+    background-color: rgba($color: #998888, $alpha: 0.5);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logout-container{
+        width: 506px;
+        background-color: $color-white;
+        padding-top: 70px;
+        padding-left: 43px;
+        padding-right: 43px;
+        padding-bottom: 70px;
+        h2{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 133%;
+            /* or 40px */
+
+
+            /* Black / 100% */
+
+            color: #343434;
+            margin-bottom: 52px;
+        }
+        .dual-btn{
+            a{
+                color: $color-primary;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                /* identical to box height */
+
+                text-align: center;
+                letter-spacing: 0.03em;
+                padding: 13px 20px 13px 21px;
+            }
+            button{
+                padding: 13px 20px 13px 21px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                /* identical to box height */
+
+                text-align: center;
+                letter-spacing: 0.03em;
+            }
+        }
+    }
+    .login-container{
+        width: 506px;
+        background-color: $color-white;
+        padding-top: 70px;
+        padding-left: 43px;
+        padding-right: 43px;
+        padding-bottom: 70px;
+        form{
+            label{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 137.1%;
+                letter-spacing: 0.03em;
+                color: #5D5D5D;
+            }
+            input{
+                background: #F3F3F3;
+                border-radius: 8px;
+                padding: 12px 15px;
+                border: none;
+            }
+        }
+        
+    }
+    .new-user-container{
+        width: 506px;
+        background-color: $color-white;
+        padding-top: 70px;
+        padding-left: 43px;
+        padding-right: 43px;
+        padding-bottom: 70px;
+        h3{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 151%;
+            color: #343434;
+            margin-bottom: 34px;
+        }
+        form{
+            label{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 137.1%;
+                letter-spacing: 0.03em;
+                color: #5D5D5D;
+            }
+            input{
+                background: #F3F3F3;
+                border-radius: 8px;
+                padding: 12px 15px;
+                border: none;
+            }
+        }
+        
+    }
+    
+}

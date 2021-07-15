@@ -90,7 +90,18 @@
                   <div class="col-md-4 header-right">
                       <div class="dual-btn">
                           <button class="btn ice-btn-secondary header-cart-btn"><span class="btn-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>345.59 BDT</button>
-                          <button class="btn ice-btn-primary">login</button>
+                          <button class="btn ice-btn-primary header-login-btn d-none">login</button>
+                          <div class="user-avatar">
+                              <div>
+                                <img src="./assets/img/Profile.svg" alt="">
+                                <h3>Atiqur Rahaman</h3>
+                                <img src="./assets/img/Vectordown-angel.svg" alt="">
+                              </div>
+                              <ul>
+                                  <li><a href="">My Account</a></li>
+                                  <li><a href="#" class="header-logout-btn">Logout</a></li>
+                              </ul>
+                          </div>
                       </div>
                   </div>
                   <!-- Modal cart -->
@@ -237,7 +248,6 @@
           </div>
       </header>
       <!-- Header end -->
-
       <!-- Slider section start -->
       <section class="slider-section">
           <div class="container-fluid">
@@ -290,6 +300,48 @@
             </div>
       </section>
       <!-- Slider section end -->
+
+      <!-- login logout modal start -->
+      <section class="login-logout-modal">
+          <div class="logout-container">
+            <img src="./assets/img/logout.svg" alt="">
+            <h2>Are you Sure you want to log out?</h2>
+            <div class="dual-btn">
+                <a class="btn ice-btn-secondary logout-back-btn"><span class="btn-icon"><img src="./assets/img/left-angel-pink.svg" alt=""></span>Go Back</a>
+                <button class="btn ice-btn-primary"><span><img src="./assets/img/Power Button.svg" alt=""></span>Logout</button>
+            </div>
+          </div>
+          <div class="login-container">
+              <img src="./assets/img/login-image.svg" alt="">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputPhone">Phone Number</label>
+                  <input type="email" class="form-control" id="exampleInputPhone" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn ice-btn-primary">Login</button>
+              </form>
+          </div>
+          <div class="new-user-container">
+              <img src="./assets/img/new-user-img.svg" alt="">
+              <h3>Hmm! Looks like you are new here. Please fill this information. This is only for first time</h3>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputPhone">Phone Number</label>
+                  <input type="email" class="form-control" id="exampleInputPhone" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn ice-btn-primary">Continue</button>
+              </form>
+          </div>
+      </section>
+      <!-- login logout modal end -->
 
       <!-- Feature section start -->
       <section class="feature-section">

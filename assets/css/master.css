@@ -250,6 +250,38 @@ header .header-right .dual-btn button {
 header .header-right .dual-btn button .btn-icon {
   margin-right: 10px;
 }
+header .header-right .dual-btn .user-avatar div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-right .dual-btn .user-avatar div h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+}
+header .header-right .dual-btn .user-avatar ul {
+  padding: 0px;
+  background-color: #ffffff;
+  padding: 17px 15px;
+  border-radius: 15px;
+  display: none;
+  position: absolute;
+  top: 50px;
+}
+header .header-right .dual-btn .user-avatar ul li a {
+  color: #858585;
+}
+header .header-right .dual-btn .user-avatar ul li:first-child {
+  margin-bottom: 7px;
+}
+header .header-right .dual-btn .user-avatar:hover ul {
+  display: block;
+}
 header .modal-cart {
   width: 506px;
   background-color: #ffffff;
@@ -1936,6 +1968,11 @@ header .modal-cart .modal-cart-footer button {
           box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0883);
   border-radius: 15px;
 }
+@media only screen and (max-width: 768px) {
+  .account-information .account-info-side-bar {
+    margin-bottom: 28px;
+  }
+}
 .account-information .account-info-side-bar ul {
   padding: 0px;
 }
@@ -1978,6 +2015,13 @@ header .modal-cart .modal-cart-footer button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .account-information .account-info-detail-container .account-info-wrapper .show-account-info .section-heading {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
 }
 .account-information .account-info-detail-container .account-info-wrapper .show-account-info .section-heading h3 {
   font-style: normal;
@@ -2041,6 +2085,14 @@ header .modal-cart .modal-cart-footer button {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .account-information .account-info-detail-container .account-info-wrapper .edit-account-info .section-heading {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
 }
 .account-information .account-info-detail-container .account-info-wrapper .edit-account-info .dual-btn button {
   padding: 13px 21px 13px 21px;
@@ -2125,6 +2177,11 @@ header .modal-cart .modal-cart-footer button {
 .account-information .account-info-detail-container .my-order-wrapper ul li a .left img {
   padding-right: 25px;
 }
+@media only screen and (max-width: 768px) {
+  .account-information .account-info-detail-container .my-order-wrapper ul li a .left img {
+    display: none;
+  }
+}
 .account-information .account-info-detail-container .my-order-wrapper ul li a .right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2201,6 +2258,181 @@ header .modal-cart .modal-cart-footer button {
   /* White */
   color: #FFFFFF;
 }
+.account-information .account-info-detail-container .delivary-wrapper .section-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .account-information .account-info-detail-container .delivary-wrapper .section-heading {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.account-information .account-info-detail-container .delivary-wrapper .section-heading h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 133%;
+  color: #343434;
+}
+.account-information .account-info-detail-container .delivary-wrapper .section-heading button {
+  padding: 13px 20px 13px 21px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 768px) {
+  .account-information .account-info-detail-container .delivary-wrapper .section-heading button {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+.account-information .account-info-detail-container .delivary-wrapper .section-heading button span {
+  padding-right: 12px;
+}
+.account-information .account-info-detail-container .delivary-wrapper ul {
+  padding: 0px;
+  margin-top: 40px;
+}
+.account-information .account-info-detail-container .delivary-wrapper ul li {
+  padding: 17px 15px;
+  border: 1px solid #E7E7E7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
+          box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.account-information .account-info-detail-container .delivary-wrapper ul li .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.account-information .account-info-detail-container .delivary-wrapper ul li .left h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #343434;
+  margin-bottom: 7px;
+}
+.account-information .account-info-detail-container .delivary-wrapper ul li .left p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 137.1%;
+  letter-spacing: 0.03em;
+  color: #858585;
+}
+.account-information .account-info-detail-container .delivary-wrapper ul li .right button {
+  height: 29px;
+  width: 29px;
+  background-color: #F9D0E9;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.account-information .account-info-detail-container .delivary-wrapper ul li:not(:last-child) {
+  margin-bottom: 22px;
+}
+.account-information .account-info-detail-container .payment-wrapper .section-heading h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 133%;
+  color: #343434;
+}
+.account-information .account-info-detail-container .payment-wrapper ul {
+  padding: 0px;
+  margin-top: 40px;
+}
+.account-information .account-info-detail-container .payment-wrapper ul li {
+  padding: 17px 15px;
+  border: 1px solid #E7E7E7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
+          box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.account-information .account-info-detail-container .payment-wrapper ul li .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.account-information .account-info-detail-container .payment-wrapper ul li .left img {
+  margin-right: 25px;
+}
+.account-information .account-info-detail-container .payment-wrapper ul li .left h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #343434;
+  margin-bottom: 7px;
+}
+.account-information .account-info-detail-container .payment-wrapper ul li .left p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 137.1%;
+  letter-spacing: 0.03em;
+  color: #858585;
+}
+.account-information .account-info-detail-container .payment-wrapper ul li .right button {
+  height: 29px;
+  width: 29px;
+  background-color: #F9D0E9;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.account-information .account-info-detail-container .payment-wrapper ul li:not(:last-child) {
+  margin-bottom: 22px;
+}
 
 .order-details {
   padding-top: 150px;
@@ -2261,6 +2493,16 @@ header .modal-cart .modal-cart-footer button {
 .order-details .order-item-container ul li:last-child {
   margin-bottom: 35px;
 }
+@media only screen and (max-width: 768px) {
+  .order-details .order-item-container ul li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .order-details .order-item-container ul li .left {
   -webkit-box-flex: 0.6;
       -ms-flex: 0.6;
@@ -2302,6 +2544,13 @@ header .modal-cart .modal-cart-footer button {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media only screen and (max-width: 768px) {
+  .order-details .order-item-container ul li .right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
 .order-details .order-item-container ul li .right p {
   font-style: normal;
   font-weight: normal;
@@ -2321,6 +2570,12 @@ header .modal-cart .modal-cart-footer button {
   letter-spacing: 0.03em;
   /* Black / 100% */
   color: #343434;
+}
+@media only screen and (max-width: 768px) {
+  .order-details .order-item-container ul li .right h4 {
+    color: #E3168F;
+    padding-left: 150px;
+  }
 }
 .order-details .order-item-container .price-container .subtotal, .order-details .order-item-container .price-container .delivery-charge, .order-details .order-item-container .price-container .total {
   display: -webkit-box;
@@ -2370,6 +2625,250 @@ header .modal-cart .modal-cart-footer button {
   /* Black / 80% */
   color: #5D5D5D;
   max-width: 612px;
+}
+
+.login-logout-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(153, 136, 136, 0.5);
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.login-logout-modal .logout-container {
+  width: 506px;
+  background-color: #ffffff;
+  padding-top: 70px;
+  padding-left: 43px;
+  padding-right: 43px;
+  padding-bottom: 70px;
+}
+.login-logout-modal .logout-container h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 133%;
+  /* or 40px */
+  /* Black / 100% */
+  color: #343434;
+  margin-bottom: 52px;
+}
+.login-logout-modal .logout-container .dual-btn a {
+  color: #E3168F;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 13px 20px 13px 21px;
+}
+.login-logout-modal .logout-container .dual-btn button {
+  padding: 13px 20px 13px 21px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.login-logout-modal .login-container {
+  width: 506px;
+  background-color: #ffffff;
+  padding-top: 70px;
+  padding-left: 43px;
+  padding-right: 43px;
+  padding-bottom: 70px;
+}
+.login-logout-modal .login-container form label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 137.1%;
+  letter-spacing: 0.03em;
+  color: #5D5D5D;
+}
+.login-logout-modal .login-container form input {
+  background: #F3F3F3;
+  border-radius: 8px;
+  padding: 12px 15px;
+  border: none;
+}
+.login-logout-modal .new-user-container {
+  width: 506px;
+  background-color: #ffffff;
+  padding-top: 70px;
+  padding-left: 43px;
+  padding-right: 43px;
+  padding-bottom: 70px;
+}
+.login-logout-modal .new-user-container h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 151%;
+  color: #343434;
+  margin-bottom: 34px;
+}
+.login-logout-modal .new-user-container form label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 137.1%;
+  letter-spacing: 0.03em;
+  color: #5D5D5D;
+}
+.login-logout-modal .new-user-container form input {
+  background: #F3F3F3;
+  border-radius: 8px;
+  padding: 12px 15px;
+  border: none;
+}
+
+.contact-us-banner {
+  padding-top: 170px;
+  background: url(../img/contact-us-banner.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 79px;
+}
+.contact-us-banner h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 61px;
+  line-height: 110%;
+  color: #010101;
+  margin-bottom: 20px;
+}
+.contact-us-banner p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 149.3%;
+  letter-spacing: 0.03em;
+  color: #5D5D5D;
+}
+
+.contact-us-form {
+  padding-top: 79px;
+  padding-bottom: 79px;
+}
+.contact-us-form .info-container {
+  border: 1px solid #D6D6D6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0883);
+          box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0883);
+  border-radius: 8px;
+  padding-top: 36px;
+  padding-bottom: 43px;
+}
+.contact-us-form .info-container .not-login {
+  text-align: center;
+}
+.contact-us-form .info-container .not-login img {
+  margin-bottom: 16px;
+}
+.contact-us-form .info-container .not-login h3 {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 149.3%;
+  /* or 22px */
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* Black / 100% */
+  color: #343434;
+  margin-bottom: 21px;
+}
+.contact-us-form .info-container .not-login button {
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.contact-us-form .info-container .logged-in {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.contact-us-form .info-container .logged-in h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 133%;
+  color: #343434;
+  margin-bottom: 12px;
+}
+.contact-us-form .info-container .logged-in h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  color: #343434;
+  margin-bottom: 6px;
+}
+.contact-us-form .info-container .logged-in p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 137.1%;
+  /* or 19px */
+  letter-spacing: 0.03em;
+  /* Black / 80% */
+  color: #5D5D5D;
+  margin-bottom: 6px;
+}
+.contact-us-form .messsage-container form textarea {
+  border: 1px solid #D6D6D6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0883);
+          box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0883);
+  border-radius: 8px;
+  min-height: 216px;
+  width: 100%;
+  background: #F3F3F3;
+  padding-left: 15px;
+  padding-top: 15px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 149.3%;
+  /* or 22px */
+  letter-spacing: 0.03em;
+  /* Black / 100% */
+  color: #343434;
+}
+.contact-us-form .messsage-container form button {
+  padding: 13px 20px 13px 21px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-top: 29px;
+}
+.contact-us-form .messsage-container form button span {
+  padding-right: 12px;
 }
 
 footer {

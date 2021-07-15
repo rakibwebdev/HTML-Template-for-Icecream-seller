@@ -52,6 +52,10 @@
                 &:last-child{
                     margin-bottom: 35px;
                 }
+                @media only screen and (max-width: 768px){
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                }
                 .left{
                     flex: 0.6;
                     display: flex;
@@ -80,6 +84,9 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    @media only screen and (max-width: 768px){
+                        flex: 1;
+                    }
                     p{
                         font-style: normal;
                         font-weight: normal;
@@ -105,6 +112,10 @@
                         /* Black / 100% */
 
                         color: #343434;
+                        @media only screen and (max-width: 768px){
+                            color: $color-primary;
+                            padding-left: 150px;
+                        }
                     }
                     
                 }

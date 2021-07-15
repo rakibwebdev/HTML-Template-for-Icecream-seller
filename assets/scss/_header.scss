@@ -115,6 +115,40 @@ header{
                     margin-right: 10px;
                 }
             }
+            .user-avatar{
+                div{
+                    display: flex;
+                    align-items: center;
+                    h3{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
+                }
+                ul{
+                    padding: 0px;
+                    background-color: $color-white;
+                    padding: 17px 15px;
+                    border-radius: 15px;
+                    display: none;
+                    position: absolute;
+                    top: 50px;
+                    li{
+                        a{
+                            color: $color-gray;
+                        }
+                        &:first-child{
+                            margin-bottom: 7px;
+                        }
+                    }
+                }
+                &:hover{
+                    ul{
+                        display: block;
+                    }
+                }
+            }
             
         }
     }

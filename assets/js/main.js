@@ -208,8 +208,22 @@
         });
 
 
+        //login modal
+        jQuery('.login-logout-modal').hide();
+        jQuery('.header-login-btn').click(function(){
+            jQuery('.login-logout-modal').show();
+        });
+        jQuery('.logout-back-btn').click(function(){
+            jQuery('.login-logout-modal').hide();
+        });
+        jQuery('.header-logout-btn').click(function(){
+            jQuery('.login-logout-modal').show();
+        });
         
-        
+        jQuery('.contact-us-login-btn').click(function(){
+            jQuery('.login-logout-modal').show();
+        });
+          
 
     });
 
