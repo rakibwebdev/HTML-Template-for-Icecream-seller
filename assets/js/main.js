@@ -108,6 +108,11 @@
 
         // account information side tab
         jQuery('.tab-account-info').addClass("active");
+        jQuery('.account-info-wrapper').show();
+        jQuery('.my-order-wrapper').hide();
+        jQuery('.delivary-wrapper').hide();
+        jQuery('.payment-wrapper').hide();
+        jQuery('.logout-wrapper').hide();
         jQuery('.tab-account-info').click(function(){
             jQuery('.account-info-wrapper').show();
             jQuery('.tab-account-info').addClass("active");
@@ -183,6 +188,24 @@
             jQuery('.show-account-info').show();
         });
         
+        // order ongoing and complete tab
+        jQuery('.completed-order-container').hide();
+        jQuery('.ongoing-order-btn').addClass("active");
+
+
+        jQuery('.ongoing-order-btn').click(function(){
+            jQuery('.ongoing-order-container').show();
+            jQuery('.completed-order-container').hide();
+            jQuery('.complete-order-btn').removeClass("active");
+            jQuery('.ongoing-order-btn').addClass("active");
+        });
+
+        jQuery('.complete-order-btn').click(function(){
+            jQuery('.completed-order-container').show();
+            jQuery('.ongoing-order-container').hide();
+            jQuery('.complete-order-btn').addClass("active");
+            jQuery('.ongoing-order-btn').removeClass("active");
+        });
 
 
         

@@ -158,5 +158,137 @@
                 }
             }
         }
+        .my-order-wrapper{
+            .section-heading{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 133%;
+                /* or 33px */
+
+
+                /* Black / 100% */
+
+                color: #343434;
+                margin-bottom: 55px;
+                .dual-btn{
+                    background-color: none;
+                    padding: 0px;
+                    div{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 137.1%;
+                        /* or 19px */
+
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+
+                        /* Black / 40% */
+
+                        color: #AEAEAE;
+                        &:first-child{
+                            margin-right: 33px;
+                        }
+                    }
+                }
+            }
+            ul{
+                padding: 0px;
+                li{
+                    border: 1px solid #E7E7E7;
+                    box-sizing: border-box;
+                    /* Soft Shadow */
+
+                    box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
+                    border-radius: 10px;
+                    padding: 17px 15px;
+                    &:not(:last-child){
+                        margin-bottom: 25px;
+                    }
+                    a{
+                        display: flex;
+                        align-items: center;
+                        .left{
+                            img{
+                                padding-right: 25px;
+                            }
+                        }
+                        .right{
+                            flex: 1;
+                            .top{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-bottom: 7px;
+                                h3{
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    line-height: 25px;
+                                    /* identical to box height */
+                                    
+                                    
+                                    /* Black / 100% */
+                                    
+                                    color: #343434;
+                                    
+                                }
+                                p{
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 137.1%;
+                                    /* or 19px */
+                                    
+                                    letter-spacing: 0.03em;
+                                    
+                                    /* Black / 100% */
+                                    
+                                    color: #343434;
+                                }
+                            }
+                            .bottom{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                p{
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 137.1%;
+                                    /* or 19px */
+                                    
+                                    letter-spacing: 0.03em;
+                                    
+                                    /* Black / 60% */
+                                    
+                                    color: #858585;
+                                }
+                                div{
+                                    min-width: 70px;
+                                    background: #F8A81B;
+                                    border-radius: 24px;
+                                    padding: 8px 11px;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+
+                                    /* White */
+
+                                    color: #FFFFFF;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }

@@ -1,0 +1,166 @@
+.order-details{
+    padding-top: 150px;
+    a{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 133%;
+        /* or 33px */
+
+
+        /* Black / 100% */
+
+        color: #343434;
+        span{
+            padding-right: 23px;
+        }
+    }
+    .order-item-container{
+        box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0883);
+        border-radius: 15px;
+        padding-left: 28px;
+        padding-right: 32px;
+        padding-bottom: 35px;
+        padding-top: 35px;
+        margin-top: 38px;
+        h3{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 133%;
+            /* or 33px */
+
+
+            /* Black / 100% */
+
+            color: #343434;
+            margin-bottom: 27px;
+        }
+        ul{
+            padding: 0px;
+            li{
+                display: flex;
+                align-items: center;
+                padding: 15px;
+                border: 1px solid #E7E7E7;
+                box-sizing: border-box;
+                box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0383);
+                border-radius: 8px;
+                &:not(:last-child){
+                    margin-bottom: 8px;
+                }
+                &:last-child{
+                    margin-bottom: 35px;
+                }
+                .left{
+                    flex: 0.6;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 52.22px;
+                        height: 53px;
+                        border-radius: 4px;
+                        padding-right: 18px;
+                    }
+                    h3{
+                        margin: 0px;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 22px;
+
+                        /* Black / 100% */
+
+                        color: #343434;
+                        max-width: 265px;
+                    }
+                }
+                .right{
+                    flex: 0.4;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    p{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 149.3%;
+                        /* or 22px */
+
+                        letter-spacing: 0.03em;
+
+                        /* Black / 80% */
+
+                        color: #5D5D5D;
+                    }
+                    h4{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 137.1%;
+                        /* or 19px */
+
+                        letter-spacing: 0.03em;
+
+                        /* Black / 100% */
+
+                        color: #343434;
+                    }
+                    
+                }
+            }
+        }
+        .price-container{
+            .subtotal, .delivery-charge, .total{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h3,h4{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 25px;
+                    /* identical to box height */
+
+
+                    /* Black / 100% */
+
+                    color: #343434;
+                }
+            }
+        }
+    }
+    .order-address-container{
+        box-shadow: 0px 0px 79.1px rgba(0, 0, 0, 0.0883);
+        border-radius: 15px;
+        padding-left: 28px;
+        padding-right: 32px;
+        padding-bottom: 35px;
+        padding-top: 35px;
+        margin-top: 35px;
+        h3{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 133%;
+            /* or 33px */
+            
+            
+            /* Black / 100% */
+            
+            color: #343434;
+            margin-bottom: 19px;
+        }
+        p{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            
+            /* Black / 80% */
+            
+            color: #5D5D5D;
+            max-width: 612px;
+        }
+    }
+}
