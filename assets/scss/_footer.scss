@@ -27,8 +27,11 @@ footer{
                         @media (min-width: 769px) and (max-width: 991px){
                             width: 100%;
                         }
-                        @media only screen and (max-width: 768px){
-                            width: 348px !important;
+                        @media (min-width: 381px) and (max-width: 768px){
+                            width: 348px;
+                        }
+                        @media only screen and (max-width: 380px){
+                            width: 283px !important;
                         }
                     }
                 }

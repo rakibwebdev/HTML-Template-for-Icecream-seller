@@ -67,9 +67,18 @@ button:focus{
     outline: none !important;
     box-shadow: none !important;
 }
+button:hover{
+    color: inherit;
+}
 
  @media (min-width: 1200px){
      .container{
          max-width: 1440px;
      }
+}
+.img-fluid {
+    width: 100%;
+}
+.product-details-img-fluid{
+    max-width: 100%;
 }

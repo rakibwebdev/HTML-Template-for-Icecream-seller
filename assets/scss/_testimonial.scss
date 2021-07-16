@@ -51,8 +51,8 @@
           .owl-prev {
               left:-8px;
               top: 200px;
-              @media (min-width: 2560px){
-                left: -60px;
+              @media (min-width: 1550px){
+                left: -50px;
             }
             @media (min-width: 917px) and (max-width: 1024px) {
                 left:-40px;
@@ -65,8 +65,8 @@
            .owl-next {
               right:-8px;
               top:200px;
-              @media (min-width: 2560px){
-                  right: -60px;
+              @media (min-width: 1550px){
+                  right: -50px;
               }
                 @media (min-width: 917px) and (max-width: 1024px) {
                     right:-40px;

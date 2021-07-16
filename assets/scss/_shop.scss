@@ -83,18 +83,19 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 22px;
-                &:first-child{
-                    // color: $color-primary;
-                    span{
-                        padding-right: 13px;
-                    }
-                }
                 &:not(last-child){
                     padding-bottom: 25px;
                 }
                 &:hover{
                     cursor: pointer;
                     color: $color-primary;
+                }
+            }
+            .cat-active{
+                color: $color-primary;
+                span{
+                    padding-right: 30px;
+                    background: url(../img/pink-right-arrow.svg) no-repeat left center;
                 }
             }
         }

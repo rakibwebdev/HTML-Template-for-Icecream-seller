@@ -268,7 +268,7 @@
                   
                       <div id="cartcollapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#myCartAccordion">
                         <div class="card-body">
-                            <div class="card-body-title-container card-body-title-container-logged">
+                            <div class="card-body-title-container card-body-title-container-logged d-none">
                               
                                 <h3 class="user-name">Courtney Henry</h3>
                                 <p><span><img src="./assets/img/Call2.svg" alt="call icon"></span>+8801XXXXXXX</p>
@@ -302,48 +302,8 @@
                  </div>
                  <!-- Show if logged in end -->
 
-                 <!-- show if not logged in start -->
-                 <div class="card my-details">
-                  <div class="card-header" id="headingOne">
-                      <div class="acrd-btn" type="button" data-toggle="collapse" data-target="#cartcollapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                        <div class="acrd-btn-title">
-                          <div class="left">
-                            <h6>1</h6>
-                            <h4>My Details</h4>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-              
-                  <div id="cartcollapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#myCartAccordion">
-                    <div class="card-body">
-                        <div class="card-body-title-container">
-                          <p>Hmm! Looks like you are not logged in. Please enter your phone number</p>
-                          <form>
-                            <div class="form-group">
-                              <label for="exampleInputPhone">Phone Number</label>
-                              <input type="text" class="form-control" id="exampleInputPhone">
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputEmail1">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputPassword1">Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputPassword2">Confirm Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword2">
-                            </div>
-                            <button type="submit" class="btn ice-btn-primary">Continue <span><img src="./assets/img/Vectorwhiterightarrow.svg" alt=""></span></button>
-                          </form>
-                       </div>
-                    </div>
-                  </div>
-             </div>
-             <!-- Show if not logged in end -->
-<!-- delivery -->
+                 
+             <!-- delivery -->
              <div class="card delivery-details">
               <div class="card-header" id="headingOne">
                   <div class="acrd-btn" type="button" data-toggle="collapse" data-target="#cartcollapseThree" aria-expanded="true" aria-controls="collapseOne">
@@ -359,8 +319,8 @@
               <div id="cartcollapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#myCartAccordion">
                         <div class="card-body">
                             <div class="card-body-title-container">
-                              <ul>
-                                <li>
+                              <ul class="delivery-details-btns">
+                                <li class="select-delivery">
                                   <label class="radio" for="r1">
                                     <div>
                                       <div class="address-title">
@@ -369,7 +329,7 @@
                                       <p>4517 Washington Ave. Manchester, Kentucky 39495, Road 6, Block A, House 78, Flagt * A </p>
                                     </div>
                                   </label>
-                                  <input type="radio" name="rGroup" value="1" id="r1" checked="checked" class="radio-btn"/>
+                                  <input type="radio" name="deliveryAddress" value="1" id="r1" checked="checked" class="radio-btn"/>
                                 </li>
                                 <li>
                                   <label class="radio" for="r2">
@@ -381,7 +341,7 @@
                                       <p>4517 Washington Ave. Manchester, Kentucky 39495, Road 6, Block A, House 78, Flagt * A </p>
                                     </div>
                                   </label>
-                                  <input type="radio" name="rGroup" value="2" id="r2" class="radio-btn"/>
+                                  <input type="radio" name="deliveryAddress" value="2" id="r2" class="radio-btn"/>
                                 </li>
                                 
                                 
@@ -397,8 +357,8 @@
                                   <div class="form-group">
                                     <div class="other-input">
                                       
-                                      <input type="radio" name="rGroup" value="2" id="r3" class="radio-btn-note"/>
-                                      <label for="r3">Add special note</label>
+                                      <input type="checkbox" name="otherAddress" value="2" id="other1" class="check-btn-note"/>
+                                      <label for="other1">Add special note</label>
                                       
                                     </div>
                                     <input type="text" class="form-control other-address-field" id="exampleInputAddress">
@@ -411,6 +371,7 @@
                         </div>
                       </div>
                 </div>
+                <!-- payment -->
                 <div class="card payment-details">
                   <div class="card-header" id="headingOne">
                       <div class="acrd-btn" type="button" data-toggle="collapse" data-target="#cartcollapseFour" aria-expanded="true" aria-controls="collapseOne">
@@ -423,11 +384,11 @@
                       </div>
                   </div>
               
-                  <div id="cartcollapseFour" class="collapse show" aria-labelledby="headingOne" data-parent="#myCartAccordion">
+                  <div id="cartcollapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#myCartAccordion">
                             <div class="card-body">
                                 <div class="card-body-title-container">
-                                  <ul>
-                                    <li>
+                                  <ul class="payment-btns">
+                                    <li class="select-payment">
                                       <label for="payment1">
                                         <div class="payment-icon">
                                           <img src="./assets/img/Frame 30cash.svg" alt="">
@@ -458,7 +419,7 @@
                                           
                                         </div>
                                       </label>
-                                      <input type="radio" name="paymentGroup" value="1" id="payment2" checked="checked" class="radio-btn"/>
+                                      <input type="radio" name="paymentGroup" value="1" id="payment2" class="radio-btn"/>
                                     </li>
                                     <li>
                                       <label for="payment3">
@@ -475,7 +436,7 @@
                                           
                                         </div>
                                       </label>
-                                      <input type="radio" name="paymentGroup" value="1" id="payment3" checked="checked" class="radio-btn"/>
+                                      <input type="radio" name="paymentGroup" value="1" id="payment3" class="radio-btn"/>
                                     </li>
                                     <button class="btn ice-btn-primary confirm-payment-btn">Cofirm Address<span class="ml-1"><img src="./assets/img/Vectorwhitetick.svg" alt=""></span></button>
                                   </ul>
