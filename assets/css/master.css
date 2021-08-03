@@ -221,7 +221,15 @@ header .header-left .navbar .active .nav-link {
 }
 header .header-right {
   margin-top: 2%;
-  padding-left: 145px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 @media (min-width: 917px) and (max-width: 1024px) {
   header .header-right {
@@ -348,7 +356,7 @@ header .modal-cart .modal-cart-body .modal-cart-products ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   /* Soft Shadow */
@@ -437,7 +445,7 @@ header .modal-cart .modal-cart-footer .total-price h3 {
   line-height: 30px;
   /* identical to box height */
   /* Gray 2 */
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 header .modal-cart .modal-cart-footer button {
   font-style: normal;
@@ -461,7 +469,7 @@ header .modal-cart .modal-cart-footer button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #FFF;
+  background-color: #fff;
   /* change if the mask should have another color then white */
   z-index: 99999;
   /* makes sure it stays on top */
@@ -486,7 +494,7 @@ header .modal-cart .modal-cart-footer button {
 }
 
 .slider-section {
-  background: url(../img/slider-bg.svg);
+  background: rgba(252, 227, 242, 0.5);
   padding-top: 129px;
   position: relative;
   z-index: 0;
@@ -582,7 +590,9 @@ header .modal-cart .modal-cart-footer button {
     left: 28%;
   }
 }
-.slider-section .owl-carousel .owl-nav button.owl-next, .slider-section .owl-carousel .owl-nav button.owl-prev, .slider-section .owl-carousel button.owl-dot {
+.slider-section .owl-carousel .owl-nav button.owl-next,
+.slider-section .owl-carousel .owl-nav button.owl-prev,
+.slider-section .owl-carousel button.owl-dot {
   height: 8px;
   width: 8px;
   background-color: #D6D6D6;
@@ -592,7 +602,7 @@ header .modal-cart .modal-cart-footer button {
 .slider-section .owl-dots button.owl-dot.active {
   height: 13px;
   width: 13px;
-  background-color: #F8A81B;
+  background-color: #f8a81b;
 }
 .slider-section .slider-social-icons {
   position: absolute;

@@ -268,7 +268,7 @@
 
     //preloader
     jQuery(window).on('load', function () {
-        jQuery('#preloader').hide().fadeOut('slow');
+        jQuery('#preloader').hide();
     });
 
 
