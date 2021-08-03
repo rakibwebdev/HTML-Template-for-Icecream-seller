@@ -65,7 +65,7 @@
         }
         .owl-dots{
             position: absolute;
-            left: 11%;
+            left: 9%;
             top: 90%;
             @media (min-width: 1000px) and (max-width: 1200px){
                  left: 11%;
@@ -109,6 +109,7 @@
         position: absolute;
         top: 244px;
         right: 0;
+        z-index: 111;
         @media only screen and (max-width: 991px){
             display: none;
         }
